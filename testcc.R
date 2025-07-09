@@ -6,5 +6,8 @@ data <- data.frame(
   sex=sample(c("Male","Female"),10,replace=TRUE),
   age=sample(18:60,10,replace = TRUE),
   weight=sample(50:80,10,replace=FALSE),
-  height=sample(158:177,10,replace=FALSE)
+  height=sample(158:177,10,replace=FALSE),
+  eos=sample(2.1:3.5,10,replace=TRUE)
 )
+
+sum<-summary(data$weight)
